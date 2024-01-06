@@ -1,4 +1,4 @@
-import { ICONS } from "@/assets/icon";
+import { ICONS } from "@/components/icons";
 
 export const QualitySection = () => {
   const qualityData = [
