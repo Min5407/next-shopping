@@ -27,12 +27,8 @@ export const CustomSheet = ({
     <Sheet>
       <SheetTrigger className="group">{TriggerElement}</SheetTrigger>
       <SheetContent className="flex flex-col">
-        <SheetHeader>
-          <SheetTitle>{TitleElement}</SheetTitle>
-        </SheetHeader>
-        <SheetDescription className="flex-1 flex-grow">
-          {children}
-        </SheetDescription>
+        <SheetHeader>{TitleElement}</SheetHeader>
+        <div className="flex-1 flex-grow overflow-auto">{children}</div>
         <SheetFooter>{FooterElement}</SheetFooter>
       </SheetContent>
     </Sheet>
