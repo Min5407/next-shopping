@@ -1,8 +1,6 @@
-import { ICONS } from "@/components/icons";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { Cart } from "./components/cart";
-import { Avatar } from "@/components/ui/avatar";
 import { ProfileAvatar } from "@/components/avatar";
 
 export const Navigation = () => {

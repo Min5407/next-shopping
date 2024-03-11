@@ -3,6 +3,17 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/tailwind";
 import { HeaderNav } from "@/components/nav/header_nav";
+import {
+  ActivitySquare,
+  Combine,
+  Computer,
+  Database,
+  GanttChartSquare,
+  Layers3,
+  LayoutDashboard,
+  PcCase,
+} from "lucide-react";
+import { Settings, Folders, ScanEye, View, Package, Boxes } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +32,67 @@ export default function RootLayout({
       <body className={cn("relative h-full antialiased ", inter.className)}>
         <main className="relative flex min-h-screen flex-col">
           <HeaderNav />
+          <nav className="p-4 border-zinc-500 border w-72 h-screen">
+            <ul className="flex flex-col gap-7 ">
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <LayoutDashboard className="inline-block mr-3" />
+                DashBoard
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <Layers3 className="inline-block mr-3" />
+                Workspace
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <Database className="inline-block mr-3" />
+                DataLab
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <Computer className="inline-block mr-3" />
+                DataLab
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <PcCase className="inline-block mr-3" />
+                DataLab
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <GanttChartSquare className="inline-block mr-3" />
+                Projects
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <ActivitySquare className="inline-block mr-3" />
+                Projects
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <Combine className="inline-block mr-3" />
+                Multi View
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <View className="inline-block mr-3" />
+                Multi View
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <ScanEye className="inline-block mr-3" />
+                Multi View
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <Boxes className="inline-block mr-3" />
+                Repository
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <Folders className="inline-block mr-3" />
+                Repository
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <Package className="inline-block mr-3" />
+                Repository
+              </li>
+              <li className="text-lg font-bold text-[#3455FF] text-opacity-50">
+                <Settings className="inline-block mr-3" />
+                Setting
+              </li>
+            </ul>
+          </nav>
+
           <div className="flex-1 flex-grow">{children}</div>
         </main>
       </body>
